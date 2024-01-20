@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
-import 'package:sqlite_demo/db_helper.dart';
+import 'package:sqlite_demo/Constant/db_helper.dart';
 import 'package:toast/toast.dart';
 
 class HomeController extends GetxController {

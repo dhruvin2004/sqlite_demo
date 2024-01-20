@@ -33,7 +33,7 @@ class ApiController extends GetxController{
         userModal = UserModal.fromJson(json.decode(response.body));
         data.addAll(userModal!.data!);
         print(data);
-        return data;
+        update();
       }
     }
     catch (e)

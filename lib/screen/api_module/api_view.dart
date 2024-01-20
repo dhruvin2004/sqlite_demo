@@ -23,7 +23,8 @@ class ApiView extends StatelessWidget {
           centerTitle: true,
           title: Text("API Calling"),
         ),
-        body: (_.data != null) ? ListView(
+        body: (_.data == null) ?
+        Center(child: CircularProgressIndicator(color: Colors.blue,),) :ListView(
           children: [
             ... List.generate(_.data.length, (index) =>  Container(
               padding: EdgeInsets.all(15),
@@ -40,7 +41,7 @@ class ApiView extends StatelessWidget {
               ) ,
             ),)
           ],
-        ) : Center(child: CircularProgressIndicator(color: Colors.blue,),),
+        ),
       );
     });
   }
